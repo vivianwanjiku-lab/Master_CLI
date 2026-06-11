@@ -14,7 +14,7 @@ A professional command-line quiz game built with Python, featuring user manageme
 
 ```bash
 # Clone the repository
-git clone https://github.com/vivianwanjiku-lab/Quiz-game-cli.git
+git clone https://github.com/vivianwanjiku-lab/Master_cli.git
 cd MASTER_CLI
 
 # Create virtual environment
