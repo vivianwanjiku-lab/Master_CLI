@@ -4,7 +4,7 @@ import sys
 from typing import List
 
 from models import User, QuizSession, Question
-from utils import FileHandler, Validators
+from utils import FileHandler, Validators, APIHandler
 
 
 class QuizCLI:
@@ -79,6 +79,12 @@ class QuizCLI:
         question_add.add_argument("--options", "-o", nargs=4, required=True)
         question_add.add_argument("--answer", "-a", required=True)
         question_add.add_argument("--difficulty", "-d", default="medium")
+        
+        question_fetch = question_subparsers.add_parser("fetch", help="Fetch questions from API")
+        question_fetch.add_argument("--amount", "-n", type=int, default=15, help="Number of questions (1-50)")
+        question_fetch.add_argument("--difficulty", "-d", choices=["easy", "medium", "hard"])
+        question_fetch.add_argument("--category", "-c", type=int, help="Category ID")
+        question_fetch.add_argument("--categories", action="store_true", help="List available categories")
         
         # Scores
         scores_parser = subparsers.add_parser("scores", help="View scores")
@@ -203,7 +209,7 @@ class QuizCLI:
     
     def _handle_question(self, args):
         if not args.action:
-            print("Please specify: list or add")
+            print("Please specify: list, add, or fetch")
             return
         
         if args.action == "list":
@@ -230,6 +236,43 @@ class QuizCLI:
                 print(f"✅ Question added! ID: {question.question_id}")
             else:
                 print("❌ Failed to save question")
+        
+        elif args.action == "fetch":
+            # Show categories
+            if args.categories:
+                categories = APIHandler.get_categories()
+                if categories:
+                    print("\n📚 Available Categories:")
+                    print("-" * 50)
+                    for cat_id, cat_name in sorted(categories.items()):
+                        print(f"  {cat_id}: {cat_name}")
+                else:
+                    print("❌ Failed to fetch categories")
+                return
+            
+            # Fetch questions from API
+            print(f"📡 Fetching {args.amount} questions from Open Trivia Database...")
+            questions = APIHandler.fetch_questions(
+                amount=args.amount,
+                difficulty=args.difficulty,
+                category=args.category
+            )
+            
+            if not questions:
+                print("❌ Failed to fetch questions from API")
+                return
+            
+            # Save to local storage
+            questions_data = self.file_handler.load_data("questions")
+            for q in questions:
+                questions_data[q.question_id] = q.to_dict()
+            
+            if self.file_handler.save_data("questions", questions_data):
+                print(f"✅ Successfully fetched and saved {len(questions)} questions!")
+                print("\nSample question:")
+                print(f"  {questions[0].text[:60]}...")
+            else:
+                print("❌ Failed to save questions")
     
     def _handle_scores(self, args):
         if args.leaderboard:

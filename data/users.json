@@ -7,5 +7,14 @@
         "quiz_history": [],
         "total_score": 0,
         "quizzes_taken": 0
+    },
+    "01e76e1c-9455-451b-b02d-0fb81070e516": {
+        "user_id": "01e76e1c-9455-451b-b02d-0fb81070e516",
+        "username": "Tabby",
+        "email": "tabithamburu@gmail.com",
+        "created_at": "2026-06-11T14:21:51.507369",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
     }
 }
