@@ -46,7 +46,102 @@ class QuizCLI:
                     "category": "Computers",
                     "times_asked": 0,
                     "times_correct": 0
-                }
+                },
+                "q4": {
+                   "question_id": "q4",
+                   "text": "Who wrote 'To Kill a Mockingbird'?",
+                   "options": [
+                   "Harper Lee",
+                   "Mark Twain",
+                   "Ernest Hemingway",
+                   "F. Scott Fitzgerald"],
+                   "correct_answer": "Harper Lee",
+                   "difficulty": "hard",
+                   "category": "Literature",
+                   "times_asked": 0,
+                   "times_correct": 0
+                   },
+                "q5": {
+                    "question_id": "q5",
+                    "text": "What is the chemical symbol for Gold?",
+                    "options": ["Au", "Ag", "Gd", "Go"],
+                    "correct_answer": "Au",
+                    "difficulty": "medium",
+                    "category": "Chemistry",
+                    "times_asked": 0,
+                    "times_correct": 0
+                  },
+               "q6": {
+                        "question_id": "q6",
+                        "text": "In which year did the Titanic sink?",
+                        "options": ["1910", "1912", "1914", "1916"],
+                        "correct_answer": "1912",
+                        "difficulty": "medium",
+                        "category": "History",
+                        "times_asked": 0,
+                        "times_correct": 0
+                    },
+              "q7": {
+                        "question_id": "q7",
+                        "text": "What is the largest mammal in the world?",
+                        "options": [
+                        "Elephant",
+                        "Blue Whale",
+                        "Giraffe",
+                        "Hippopotamus"
+                        ],
+                        "correct_answer": "Blue Whale",
+                        "difficulty": "medium",
+                       "category": "Biology",
+                       "times_asked": 0,
+                       "times_correct": 0
+                       },
+               "q8": {
+                "question_id": "q8",
+                "text": "Who painted the Mona Lisa?",
+                "options": [
+                 "Leonardo da Vinci",
+                 "Vincent van Gogh",
+                 "Pablo Picasso",
+                 "Claude Monet"
+               ],
+                "correct_answer": "Leonardo da Vinci",
+                "difficulty": "medium",
+                "category": "Art",
+                "times_asked": 0,
+                "times_correct": 0
+               },
+           "q9": {
+                "question_id": "q9",
+                "text": "What is the smallest prime number?",
+                "options": [
+                "0",
+                "1",
+                "2",
+                "3"
+             ],
+               "correct_answer": "2",
+               "difficulty": "easy",
+               "category": "Mathematics",
+               "times_asked": 0,
+               "times_correct": 0
+             },
+           "q10": {
+               "question_id": "q10",
+               "text": "Which element has the atomic number 1?",
+               "options": [
+                    "Helium",
+                    "Hydrogen",
+                    "Oxygen",
+                    "Carbon"
+                    ],
+              "correct_answer": "Hydrogen",
+              "difficulty": "hard",
+              "category": "Chemistry",
+              "times_asked": 0,
+              "times_correct": 0
+              }
+         
             }
             self.file_handler.save_data("questions", sample_questions)
     
@@ -177,6 +272,10 @@ class QuizCLI:
         
         while not session.is_complete:
             q = session.current_question
+            if q is None:
+                print("❌ Error: No question available")
+                break
+            
             print(f"\nQuestion {session.progress}")
             print(f"Category: {q.category} | Difficulty: {q.difficulty.upper()}")
             print(f"\n{q.text}\n")

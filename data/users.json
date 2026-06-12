@@ -16,5 +16,149 @@
         "quiz_history": [],
         "total_score": 0,
         "quizzes_taken": 0
+    },
+    "2b1129c9-2e88-4753-94c1-710a20e5bc0a": {
+        "user_id": "2b1129c9-2e88-4753-94c1-710a20e5bc0a",
+        "username": "vivianne",
+        "email": "vivianwanjiku@student.moringaschool.com",
+        "created_at": "2026-06-12T12:31:37.745159",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "80f9196b-7a1c-4ddc-8b8e-94e2f2f1c0bd": {
+        "user_id": "80f9196b-7a1c-4ddc-8b8e-94e2f2f1c0bd",
+        "username": "testuser",
+        "email": "test@example.com",
+        "created_at": "2026-06-12T15:12:22.234890",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "78c77632-e635-4245-8260-3ccc89040fd1": {
+        "user_id": "78c77632-e635-4245-8260-3ccc89040fd1",
+        "username": "newuser",
+        "email": "new@example.com",
+        "created_at": "2026-06-12T15:12:22.256874",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "c9943081-790a-4371-90f7-4477f547af4e": {
+        "user_id": "c9943081-790a-4371-90f7-4477f547af4e",
+        "username": "testuser",
+        "email": "test@example.com",
+        "created_at": "2026-06-12T15:12:22.270058",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "d90a12da-0f4d-4635-9703-2ab987ba807c": {
+        "user_id": "d90a12da-0f4d-4635-9703-2ab987ba807c",
+        "username": "testuser",
+        "email": "test@example.com",
+        "created_at": "2026-06-12T15:12:39.492569",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "6c3de282-a632-4b95-a008-50a76c21fd1c": {
+        "user_id": "6c3de282-a632-4b95-a008-50a76c21fd1c",
+        "username": "newuser",
+        "email": "new@example.com",
+        "created_at": "2026-06-12T15:12:39.497919",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "f92c93e4-4496-400d-95f2-9c3143cf798a": {
+        "user_id": "f92c93e4-4496-400d-95f2-9c3143cf798a",
+        "username": "testuser",
+        "email": "test@example.com",
+        "created_at": "2026-06-12T15:12:39.510345",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "69868e2f-ecf9-4439-8433-3befdadb43f0": {
+        "user_id": "69868e2f-ecf9-4439-8433-3befdadb43f0",
+        "username": "testuser",
+        "email": "test@example.com",
+        "created_at": "2026-06-12T15:14:00.883971",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "acadbdd0-1823-4859-bc0c-9c29b1f37428": {
+        "user_id": "acadbdd0-1823-4859-bc0c-9c29b1f37428",
+        "username": "newuser",
+        "email": "new@example.com",
+        "created_at": "2026-06-12T15:14:00.888988",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "b6473691-d48d-4c99-b67c-eb40df71e74f": {
+        "user_id": "b6473691-d48d-4c99-b67c-eb40df71e74f",
+        "username": "testuser",
+        "email": "test@example.com",
+        "created_at": "2026-06-12T15:14:00.902021",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "ffb75463-9add-4c79-b32f-7cb626008708": {
+        "user_id": "ffb75463-9add-4c79-b32f-7cb626008708",
+        "username": "testuser",
+        "email": "test@example.com",
+        "created_at": "2026-06-12T15:14:25.732598",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "801e21f9-c777-4170-b2fa-e6fe4a51e86a": {
+        "user_id": "801e21f9-c777-4170-b2fa-e6fe4a51e86a",
+        "username": "newuser",
+        "email": "new@example.com",
+        "created_at": "2026-06-12T15:14:25.738206",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "fc61627b-eafa-45f4-a6db-c98a7f89ee73": {
+        "user_id": "fc61627b-eafa-45f4-a6db-c98a7f89ee73",
+        "username": "testuser",
+        "email": "test@example.com",
+        "created_at": "2026-06-12T15:14:25.750771",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "0c419420-43ee-47a0-9c7f-32432196bf7b": {
+        "user_id": "0c419420-43ee-47a0-9c7f-32432196bf7b",
+        "username": "testuser",
+        "email": "test@example.com",
+        "created_at": "2026-06-12T15:14:47.778656",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "d89eef3c-d28d-461e-8faa-587ed4ad8bea": {
+        "user_id": "d89eef3c-d28d-461e-8faa-587ed4ad8bea",
+        "username": "newuser",
+        "email": "new@example.com",
+        "created_at": "2026-06-12T15:14:47.786099",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "9bb92a2e-4f54-4973-9c35-397e28528b19": {
+        "user_id": "9bb92a2e-4f54-4973-9c35-397e28528b19",
+        "username": "testuser",
+        "email": "test@example.com",
+        "created_at": "2026-06-12T15:14:47.805522",
+        "quiz_history": [],
+        "total_score": 0,
+        "quizzes_taken": 0
     }
 }

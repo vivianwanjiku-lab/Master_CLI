@@ -5,7 +5,7 @@ A professional command-line quiz game built with Python, featuring user manageme
 ## ✨ Features
 
 - **User Management** - Create and manage multiple users
-- **Custom Questions** - Add your own questions with 4 options  
+- **Custom Questions** - Add your own questions with 4 options
 - **Multiple Difficulties** - Easy, Medium, and Hard levels
 - **Score Tracking** - Persistent high scores and leaderboard
 - **Statistics** - View user and global performance metrics
@@ -25,4 +25,6 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install requests rich tabulate
 
 # Run the game
-python main.py --help
+python cli.py --help
+
+```
