@@ -25,4 +25,4 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install requests rich tabulate
 
 # Run the game
-python main.py --help
+python cli.py --help
