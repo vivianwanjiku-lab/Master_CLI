@@ -26,5 +26,4 @@ pip install requests rich tabulate
 
 # Run the game
 python cli.py --help
-
 ```
